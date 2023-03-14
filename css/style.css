@@ -1,0 +1,290 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+#center {
+    width: 910px;
+}
+
+#right {
+    width: 440px;
+    background-color: aqua;
+}
+
+#left {
+    width: 90px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+#left_above {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 32px;
+    margin-top: 40px;
+}
+
+.item1 {
+    width: 46px;
+    margin-top: 40px;
+}
+
+#setting {
+    margin-top: 36px;
+}
+
+#left::after {
+    content: '';
+    height: inherit;
+    width: 2px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.meet_title {
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meet_title h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.record {
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid #E34D73;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #E34D73;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.record>p {
+    margin-left: 30px;
+    color: #E34D73;
+    font-size: 14px;
+}
+
+.calander {
+    padding: 0 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.calander img {
+    display: inline-block;
+}
+
+.internal {
+    width: 95px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E34D73;
+    border-radius: 20px;
+}
+
+.internal span {
+    font-weight: 50;
+    color: #fff;
+}
+
+.internal>img {
+    width: 20px;
+}
+
+.lich {
+    padding: 5px 20px;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.lich>img {
+    width: 21px;
+    margin-bottom: -5px;
+}
+
+.sep {
+    display: inline-block;
+    position: relative;
+}
+
+.sep:after {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background-color: #ccc;
+    position: absolute;
+    top: 2px;
+    right: -20px;
+}
+
+.hour {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.img_big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_big {
+    padding: 36px;
+}
+
+.dot_green {
+    width: 10px;
+    height: 10px;
+    background-color: #1DD75B;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 30px;
+}
+
+.name_user {
+    padding: 10px 20px 10px 30px;
+    background-color: #76777A;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.img_micro {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.img_big>img:first-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.img_phu {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.img_phu img {
+    border-radius: 5px;
+}
+
+.img_chinh {
+    position: relative;
+}
+
+.img {
+    position: relative;
+}
+
+.name_user_phu {
+    padding: 5px 10px 5px 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.dot_green_phu {
+    width: 7px;
+    height: 7px;
+    background-color: #1DD75B;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.img_mute {
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+.img_L {
+    width: 200px;
+}
