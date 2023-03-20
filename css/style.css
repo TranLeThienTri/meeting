@@ -84,7 +84,7 @@ html {
 }
 
 #left::after {
-    content: '';
+    content: "";
     height: inherit;
     width: 2px;
     background-color: #ccc;
@@ -107,7 +107,7 @@ html {
 .record {
     width: 100px;
     border-radius: 20px;
-    border: 1px solid #E34D73;
+    border: 1px solid #e34d73;
     padding: 10px 20px 10px 10px;
     position: relative;
 }
@@ -115,7 +115,7 @@ html {
 .dot {
     width: 10px;
     height: 10px;
-    background-color: #E34D73;
+    background-color: #e34d73;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -123,9 +123,9 @@ html {
     margin-left: 10px;
 }
 
-.record>p {
+.record > p {
     margin-left: 30px;
-    color: #E34D73;
+    color: #e34d73;
     font-size: 14px;
 }
 
@@ -147,7 +147,7 @@ html {
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
-    background-color: #E34D73;
+    background-color: #e34d73;
     border-radius: 20px;
 }
 
@@ -156,7 +156,7 @@ html {
     color: #fff;
 }
 
-.internal>img {
+.internal > img {
     width: 20px;
 }
 
@@ -166,7 +166,7 @@ html {
     font-size: 14px;
 }
 
-.lich>img {
+.lich > img {
     width: 21px;
     margin-bottom: -5px;
 }
@@ -204,7 +204,7 @@ html {
 .dot_green {
     width: 10px;
     height: 10px;
-    background-color: #1DD75B;
+    background-color: #1dd75b;
     border-radius: 50%;
     position: absolute;
     top: 23px;
@@ -213,7 +213,7 @@ html {
 
 .name_user {
     padding: 10px 20px 10px 30px;
-    background-color: #76777A;
+    background-color: #76777a;
     color: #fff;
     display: inline-block;
     position: absolute;
@@ -230,7 +230,7 @@ html {
     right: 20px;
 }
 
-.img_big>img:first-child {
+.img_big > img:first-child {
     border-radius: 0 0 10px 10px;
 }
 
@@ -269,7 +269,7 @@ html {
 .dot_green_phu {
     width: 7px;
     height: 7px;
-    background-color: #1DD75B;
+    background-color: #1dd75b;
     border-radius: 50%;
     position: absolute;
     top: 15px;
@@ -285,6 +285,43 @@ html {
     border-radius: 2px;
 }
 
-.img_L {
+.option {
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.option_left {
     width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option_left img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.option_center {
+    width: 110px;
+    background-color: red;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    margin: auto 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.option_right {
+    display: flex;
+    flex-direction: row;
+}
+
+.option_right img {
+    margin-left: 10px;
 }
