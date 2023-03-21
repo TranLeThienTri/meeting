@@ -395,3 +395,73 @@ html {
     font-size: 14px;
     font-weight: 500;
 }
+
+.chat h1 {
+    padding: 36px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.right_bottom {
+    padding: 0 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.comment_main {
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.time {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-left: 20px;
+}
+
+.user_name_time {
+    display: flex;
+}
+
+.user_name {
+    font-weight: 700;
+}
+
+.sub_comment {
+    width: 100%;
+    padding: 10px 15px;
+    position: absolute;
+    top: 24px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.input {
+    position: absolute;
+    bottom: -20px;
+    left: 90px;
+    display: flex;
+}
+
+.input input{
+    width: 300px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: none;
+}
+
+.icon_smile{
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    opacity: 0.4;
+}
