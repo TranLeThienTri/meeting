@@ -43,7 +43,10 @@ html {
 
 #right {
     width: 440px;
-    background-color: aqua;
+    position: relative;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
 }
 
 #left {
@@ -87,9 +90,10 @@ html {
     content: "";
     height: inherit;
     width: 2px;
-    background-color: #ccc;
+    background-color: #999;
+    opacity: 0.1;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
 }
 
@@ -293,7 +297,6 @@ html {
 }
 
 .option_left {
-    width: 200px;
     display: flex;
     justify-content: flex-end;
 }
@@ -324,4 +327,71 @@ html {
 
 .option_right img {
     margin-left: 10px;
+}
+
+#right::after {
+    content: "";
+    top: 10px;
+    left: 0;
+    background-color: #999;
+    opacity: 0.1;
+    width: 2px;
+    position: absolute;
+    height: inherit;
+}
+
+.right_top {
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(244, 244, 244);
+}
+.right_header {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.btn_add {
+    padding: 5px 12px;
+    color: #e34d73;
+    border-radius: 5px;
+    border: 1px solid #e34d73;
+    font-weight: 300;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.btn_add i::after {
+    content: "";
+    padding: 8px;
+}
+
+.right_user {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.sercives {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.user_avt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
 }
